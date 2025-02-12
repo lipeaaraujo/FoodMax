@@ -1,0 +1,139 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Spaghetti Carbonara",
+    "ingredients": ["spaghetti", "eggs", "parmesan cheese", "bacon", "garlic", "black pepper"],
+    "steps": [
+      "Cook spaghetti according to package instructions.",
+      "Fry bacon until crispy, then add minced garlic.",
+      "Whisk eggs and parmesan cheese in a bowl.",
+      "Combine cooked spaghetti with bacon and garlic, then mix in the egg and cheese mixture.",
+      "Serve immediately with extra parmesan and black pepper."
+    ],
+    "image": "https://example.com/spaghetti-carbonara.jpg",
+    "category": "Pasta"
+  },
+  {
+    "id": 2,
+    "name": "Grilled Chicken Salad",
+    "ingredients": ["chicken breast", "mixed greens", "cherry tomatoes", "cucumber", "olive oil", "lemon juice", "salt", "pepper"],
+    "steps": [
+      "Season chicken breast with salt and pepper, then grill until cooked.",
+      "Chop mixed greens, cherry tomatoes, and cucumber.",
+      "Slice grilled chicken and place it on top of the salad.",
+      "Drizzle with olive oil and lemon juice, then toss gently."
+    ],
+    "image": "https://example.com/grilled-chicken-salad.jpg",
+    "category": "Salad"
+  },
+  {
+    "id": 3,
+    "name": "Beef Tacos",
+    "ingredients": ["ground beef", "taco shells", "lettuce", "cheddar cheese", "salsa", "sour cream", "taco seasoning"],
+    "steps": [
+      "Cook ground beef in a pan and add taco seasoning.",
+      "Chop lettuce and grate cheddar cheese.",
+      "Warm taco shells in the oven or microwave.",
+      "Fill taco shells with beef, lettuce, cheese, salsa, and sour cream."
+    ],
+    "image": "https://example.com/beef-tacos.jpg",
+    "category": "Mexican"
+  },
+  {
+    "id": 4,
+    "name": "Vegetable Stir Fry",
+    "ingredients": ["broccoli", "carrots", "bell peppers", "soy sauce", "garlic", "ginger", "sesame oil", "rice"],
+    "steps": [
+      "Cook rice according to package instructions.",
+      "Chop broccoli, carrots, and bell peppers into bite-sized pieces.",
+      "Heat sesame oil in a wok, then add minced garlic and ginger.",
+      "Stir fry vegetables until tender, then add soy sauce.",
+      "Serve over cooked rice."
+    ],
+    "image": "https://example.com/vegetable-stir-fry.jpg",
+    "category": "Vegetarian"
+  },
+  {
+    "id": 5,
+    "name": "Chocolate Chip Cookies",
+    "ingredients": ["flour", "sugar", "butter", "eggs", "chocolate chips", "vanilla extract", "baking soda", "salt"],
+    "steps": [
+      "Preheat oven to 350°F (175°C).",
+      "Mix flour, baking soda, and salt in a bowl.",
+      "Cream butter and sugar, then add eggs and vanilla extract.",
+      "Combine wet and dry ingredients, then fold in chocolate chips.",
+      "Drop spoonfuls of dough onto a baking sheet and bake for 10-12 minutes."
+    ],
+    "image": "https://example.com/chocolate-chip-cookies.jpg",
+    "category": "Dessert"
+  },
+  {
+    "id": 6,
+    "name": "Margherita Pizza",
+    "ingredients": ["pizza dough", "tomato sauce", "mozzarella cheese", "fresh basil", "olive oil", "salt"],
+    "steps": [
+      "Preheat oven to 475°F (245°C).",
+      "Roll out pizza dough and spread tomato sauce evenly.",
+      "Top with mozzarella cheese and fresh basil leaves.",
+      "Drizzle with olive oil and sprinkle with salt.",
+      "Bake for 10-15 minutes or until crust is golden."
+    ],
+    "image": "https://example.com/margherita-pizza.jpg",
+    "category": "Italian"
+  },
+  {
+    "id": 7,
+    "name": "Chicken Curry",
+    "ingredients": ["chicken thighs", "onion", "garlic", "ginger", "tomatoes", "coconut milk", "curry powder", "turmeric", "cumin", "coriander"],
+    "steps": [
+      "Sauté chopped onion, garlic, and ginger in a pan.",
+      "Add chicken thighs and cook until browned.",
+      "Stir in curry powder, turmeric, cumin, and coriander.",
+      "Add chopped tomatoes and coconut milk, then simmer for 20 minutes.",
+      "Serve with rice or naan bread."
+    ],
+    "image": "https://example.com/chicken-curry.jpg",
+    "category": "Indian"
+  },
+  {
+    "id": 8,
+    "name": "Pancakes",
+    "ingredients": ["flour", "milk", "eggs", "sugar", "baking powder", "butter", "maple syrup"],
+    "steps": [
+      "Mix flour, sugar, and baking powder in a bowl.",
+      "Whisk milk and eggs, then combine with dry ingredients.",
+      "Heat a pan and melt a small amount of butter.",
+      "Pour batter onto the pan and cook until bubbles form, then flip.",
+      "Serve with maple syrup."
+    ],
+    "image": "https://example.com/pancakes.jpg",
+    "category": "Breakfast"
+  },
+  {
+    "id": 9,
+    "name": "Beef Burger",
+    "ingredients": ["ground beef", "burger buns", "lettuce", "tomato", "onion", "cheese", "ketchup", "mustard"],
+    "steps": [
+      "Form ground beef into patties and season with salt and pepper.",
+      "Grill or fry patties until cooked to your liking.",
+      "Toast burger buns and assemble with lettuce, tomato, onion, and cheese.",
+      "Add ketchup and mustard, then serve."
+    ],
+    "image": "https://example.com/beef-burger.jpg",
+    "category": "American"
+  },
+  {
+    "id": 10,
+    "name": "Sushi Rolls",
+    "ingredients": ["sushi rice", "nori sheets", "cucumber", "avocado", "crab sticks", "soy sauce", "wasabi", "pickled ginger"],
+    "steps": [
+      "Cook sushi rice and let it cool.",
+      "Place a nori sheet on a bamboo mat and spread rice evenly.",
+      "Add sliced cucumber, avocado, and crab sticks.",
+      "Roll tightly using the bamboo mat, then slice into pieces.",
+      "Serve with soy sauce, wasabi, and pickled ginger."
+    ],
+    "image": "https://example.com/sushi-rolls.jpg",
+    "category": "Japanese"
+  }
+]

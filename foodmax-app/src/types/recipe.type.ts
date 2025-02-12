@@ -4,4 +4,5 @@ export type Recipe = {
   ingredients: string[],
   steps: string[]
   image: string
+  category: string
 }
