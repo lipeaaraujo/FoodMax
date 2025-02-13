@@ -50,7 +50,7 @@ import { MatInputModule } from "@angular/material/input"
       <section class="recipe-list">
         @defer {
           @for (recipe of recipes; track recipe.id) {
-            <mat-card appearance="outlined" >
+            <mat-card >
               <mat-card-header>
                 <mat-card-title>{{ recipe.name }}</mat-card-title>
                 <mat-card-subtitle>{{ recipe.category }}</mat-card-subtitle>
@@ -65,7 +65,11 @@ import { MatInputModule } from "@angular/material/input"
               <mat-card-actions>
                 <a mat-button [routerLink]="['recipe-details', recipe.id]">
                   <span>See more...</span>
-                  <mat-icon aria-hidden="false" aria-label="Right Arrow" fontIcon="arrow_forward"/>
+                  <mat-icon 
+                    aria-hidden="false" 
+                    aria-label="Right Arrow" 
+                    fontIcon="arrow_forward"
+                  />
                 </a>
               </mat-card-actions>
             </mat-card>
