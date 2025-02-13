@@ -10,7 +10,9 @@ import { MatToolbarModule } from '@angular/material/toolbar'
     <mat-toolbar>
       <span>{{ title }}</span>
     </mat-toolbar>
-    <router-outlet />
+    <main class="content-container">
+      <router-outlet />
+    </main>
   `,
   styleUrl: './styles/app.component.css',
 })

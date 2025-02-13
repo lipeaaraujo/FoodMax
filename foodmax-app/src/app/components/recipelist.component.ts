@@ -14,29 +14,31 @@ import { SearchBar } from "./search.component";
     SearchBar
   ],
   template: `
-    <section>
-      <h2>Recipe List</h2>
-      <search-bar (inputEvent)="onInputSearch($event)" />
-      @defer {
-        @for (recipe of recipes; track recipe.id) {
-          <mat-card appearance="outlined" >
-            <header>
-              <mat-card-title>{{ recipe.name }}</mat-card-title>
-              <mat-card-subtitle>{{ recipe.category }}</mat-card-subtitle>
-            </header>
-            <mat-card-content>
-              <a [routerLink]="['recipe-details', recipe.id]">{{recipe.name}}</a>
-            </mat-card-content>
-          </mat-card>
+    <section class="recipe-list-container">
+      <header class="recipe-list-header">
+        <h2>Recipe List</h2>
+        <search-bar (inputEvent)="onInputSearch($event)" />
+      </header>
+      <section class="recipe-list">
+        @defer {
+          @for (recipe of recipes; track recipe.id) {
+            <mat-card appearance="outlined" >
+              <header>
+                <mat-card-title>{{ recipe.name }}</mat-card-title>
+                <mat-card-subtitle>{{ recipe.category }}</mat-card-subtitle>
+              </header>
+              <mat-card-content>
+                <a [routerLink]="['recipe-details', recipe.id]">{{recipe.name}}</a>
+              </mat-card-content>
+            </mat-card>
+          }
+        } @loading (minimum 600ms) {
+          <p>Loading recipes...</p>
         }
-      } @loading (minimum 600ms) {
-        <p>Loading recipes...</p>
-      }
+      </section>
     </section>
   `,
-  styles: `
-    
-  `
+  styleUrl: "../styles/recipelist.component.css",
 })
 export class RecipeListComponent {
   recipes: Recipe[] = [];
