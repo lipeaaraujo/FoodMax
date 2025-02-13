@@ -6,7 +6,6 @@ import { FormsModule } from "@angular/forms";
   selector: "home",
   imports: [RecipeListComponent, FormsModule],
   template: `
-    <p>Starter project</p>
     <section>
       <recipe-list />
     </section>

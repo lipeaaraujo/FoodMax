@@ -1,41 +1,45 @@
-import { Component, Input, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { Recipe } from "../../types/recipe.type";
 import { RecipeService } from "../services/recipe.service";
 import { RouterLink } from "@angular/router";
-import { error } from "node:console";
-import { FormsModule } from "@angular/forms";
 import { debounceTime, distinctUntilChanged, Subject } from "rxjs";
+import { MatCardModule } from "@angular/material/card"
+import { SearchBar } from "./search.component";
 
 @Component({
   selector: 'recipe-list',
-  imports: [RouterLink, FormsModule],
+  imports: [
+    RouterLink,
+    MatCardModule,
+    SearchBar
+  ],
   template: `
-    <header>
+    <section>
       <h2>Recipe List</h2>
-      <input 
-        type="text" 
-        placeholder="Search for a recipe" 
-        [(ngModel)]="searchValue"
-        (input)="onInputSearch()"
-      />
-      <ul>
-        @defer {
-          @for (recipe of recipes; track recipe.id) {
-            <li>
+      <search-bar (inputEvent)="onInputSearch($event)" />
+      @defer {
+        @for (recipe of recipes; track recipe.id) {
+          <mat-card appearance="outlined" >
+            <header>
+              <mat-card-title>{{ recipe.name }}</mat-card-title>
+              <mat-card-subtitle>{{ recipe.category }}</mat-card-subtitle>
+            </header>
+            <mat-card-content>
               <a [routerLink]="['recipe-details', recipe.id]">{{recipe.name}}</a>
-            </li>
-          }
-        } @loading (minimum 600ms) {
-          <p>Loading recipes...</p>
+            </mat-card-content>
+          </mat-card>
         }
-      </ul>
-    </header>
+      } @loading (minimum 600ms) {
+        <p>Loading recipes...</p>
+      }
+    </section>
   `,
-  styleUrl: "../styles/recipelist.component.css"
+  styles: `
+    
+  `
 })
 export class RecipeListComponent {
   recipes: Recipe[] = [];
-  searchValue = ""
   private searchSubject = new Subject<string>();
 
   constructor(private recipeService: RecipeService) {}
@@ -68,8 +72,8 @@ export class RecipeListComponent {
   }
 
   // when the user inputs at the search bar, call the search subject.
-  onInputSearch(): void {
-    this.searchSubject.next(this.searchValue);
+  onInputSearch(searchValue: string): void {
+    this.searchSubject.next(searchValue);
   }
 
   // filter all recipes by name based on the query value.
