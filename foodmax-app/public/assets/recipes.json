@@ -10,7 +10,7 @@
       "Combine cooked spaghetti with bacon and garlic, then mix in the egg and cheese mixture.",
       "Serve immediately with extra parmesan and black pepper."
     ],
-    "image": "https://example.com/spaghetti-carbonara.jpg",
+    "image": "https://cdn.sanity.io/images/cq7w2e71/production/08ae0b8293235129bbe7d55a3f89c2fc4f1a36d7-973x1300.jpg",
     "category": "Pasta"
   },
   {
@@ -23,7 +23,7 @@
       "Slice grilled chicken and place it on top of the salad.",
       "Drizzle with olive oil and lemon juice, then toss gently."
     ],
-    "image": "https://example.com/grilled-chicken-salad.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJi3I0i6YpkKwf-B31EykaaYMj9jRMw-Cm5Q&s",
     "category": "Salad"
   },
   {
@@ -36,7 +36,7 @@
       "Warm taco shells in the oven or microwave.",
       "Fill taco shells with beef, lettuce, cheese, salsa, and sour cream."
     ],
-    "image": "https://example.com/beef-tacos.jpg",
+    "image": "https://www.onceuponachef.com/images/2023/08/Beef-Tacos.jpg",
     "category": "Mexican"
   },
   {
@@ -50,7 +50,7 @@
       "Stir fry vegetables until tender, then add soy sauce.",
       "Serve over cooked rice."
     ],
-    "image": "https://example.com/vegetable-stir-fry.jpg",
+    "image": "https://natashaskitchen.com/wp-content/uploads/2020/08/Vegetable-Stir-Fry-2.jpg",
     "category": "Vegetarian"
   },
   {
@@ -64,7 +64,7 @@
       "Combine wet and dry ingredients, then fold in chocolate chips.",
       "Drop spoonfuls of dough onto a baking sheet and bake for 10-12 minutes."
     ],
-    "image": "https://example.com/chocolate-chip-cookies.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGAlvNFw1tAWlucyIEC5TDb6k1gPLKkeuqnw&s",
     "category": "Dessert"
   },
   {
@@ -78,7 +78,7 @@
       "Drizzle with olive oil and sprinkle with salt.",
       "Bake for 10-15 minutes or until crust is golden."
     ],
-    "image": "https://example.com/margherita-pizza.jpg",
+    "image": "https://s2-receitas.glbimg.com/RL-dN3YlvejAXwiPYoguGlE2p_0=/0x0:1280x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2022/C/H/HXf1trQZGtIylAzO2SUg/pizza-margherita-receita.jpg",
     "category": "Italian"
   },
   {
@@ -92,7 +92,7 @@
       "Add chopped tomatoes and coconut milk, then simmer for 20 minutes.",
       "Serve with rice or naan bread."
     ],
-    "image": "https://example.com/chicken-curry.jpg",
+    "image": "https://www.allrecipes.com/thmb/FL-xnyAllLyHcKdkjUZkotVlHR8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/46822-indian-chicken-curry-ii-DDMFS-4x3-39160aaa95674ee395b9d4609e3b0988.jpg",
     "category": "Indian"
   },
   {
@@ -106,7 +106,7 @@
       "Pour batter onto the pan and cook until bubbles form, then flip.",
       "Serve with maple syrup."
     ],
-    "image": "https://example.com/pancakes.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk0jaEGU3rRjsG6AB7SFMne2cOj7eLlMHciQ&s",
     "category": "Breakfast"
   },
   {
@@ -119,7 +119,7 @@
       "Toast burger buns and assemble with lettuce, tomato, onion, and cheese.",
       "Add ketchup and mustard, then serve."
     ],
-    "image": "https://example.com/beef-burger.jpg",
+    "image": "https://simplehomeedit.com/wp-content/uploads/2024/03/Homemade-Beef-Burgers-4.webp",
     "category": "American"
   },
   {
@@ -133,7 +133,7 @@
       "Roll tightly using the bamboo mat, then slice into pieces.",
       "Serve with soy sauce, wasabi, and pickled ginger."
     ],
-    "image": "https://example.com/sushi-rolls.jpg",
+    "image": "https://int.japanesetaste.com/cdn/shop/articles/how-to-make-makizushi-sushi-rolls-japanese-taste.jpg?v=1707914944&width=5760",
     "category": "Japanese"
   }
 ]

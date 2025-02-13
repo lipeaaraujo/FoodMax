@@ -5,31 +5,69 @@ import { RouterLink } from "@angular/router";
 import { debounceTime, distinctUntilChanged, Subject } from "rxjs";
 import { MatCardModule } from "@angular/material/card"
 import { SearchBar } from "./search.component";
+import { MatButtonModule } from "@angular/material/button"
+import { MatIcon } from "@angular/material/icon";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatSelectModule } from "@angular/material/select"
+import { MatInputModule } from "@angular/material/input"
 
 @Component({
   selector: 'recipe-list',
   imports: [
     RouterLink,
     MatCardModule,
+    MatButtonModule,
+    MatIcon,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
     SearchBar
   ],
   template: `
     <section class="recipe-list-container">
       <header class="recipe-list-header">
         <h2>Recipe List</h2>
-        <search-bar (inputEvent)="onInputSearch($event)" />
+        <section class="recipe-list-search-section">
+          <search-bar (inputEvent)="onInputSearch($event)" />
+          <mat-form-field>
+            <mat-label>Category</mat-label>
+            <mat-select>
+              <mat-option value="">Any</mat-option>
+              <mat-option value="pasta">Pasta</mat-option>
+              <mat-option value="salad">Salad</mat-option>
+              <mat-option value="mexican">Mexican</mat-option>
+              <mat-option value="vegetarian">Vegetarian</mat-option>
+              <mat-option value="dessert">Dessert</mat-option>
+              <mat-option value="italian">Italian</mat-option>
+              <mat-option value="indian">Indian</mat-option>
+              <mat-option value="breakfast">Breakfast</mat-option>
+              <mat-option value="american">American</mat-option>
+              <mat-option value="japanese">Japanese</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </section>
       </header>
       <section class="recipe-list">
         @defer {
           @for (recipe of recipes; track recipe.id) {
             <mat-card appearance="outlined" >
-              <header>
+              <mat-card-header>
                 <mat-card-title>{{ recipe.name }}</mat-card-title>
                 <mat-card-subtitle>{{ recipe.category }}</mat-card-subtitle>
-              </header>
+              </mat-card-header>
               <mat-card-content>
-                <a [routerLink]="['recipe-details', recipe.id]">{{recipe.name}}</a>
+                <img 
+                  class="recipe-card-img" 
+                  mat-card-image 
+                  [src]="recipe.image" 
+                />                  
               </mat-card-content>
+              <mat-card-actions>
+                <a mat-button [routerLink]="['recipe-details', recipe.id]">
+                  <span>See more...</span>
+                  <mat-icon aria-hidden="false" aria-label="Right Arrow" fontIcon="arrow_forward"/>
+                </a>
+              </mat-card-actions>
             </mat-card>
           }
         } @loading (minimum 600ms) {
