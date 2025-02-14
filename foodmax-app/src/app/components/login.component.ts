@@ -26,6 +26,7 @@ import { Router, RouterModule } from "@angular/router";
             matInput
             type="text"
             required
+            formControlName="username"
           />
         </mat-form-field>
         <mat-form-field>
@@ -34,9 +35,13 @@ import { Router, RouterModule } from "@angular/router";
             matInput
             type="password"
             required
+            formControlName="password"
           />
         </mat-form-field>
-        <button routerLink="/home" mat-flat-button>
+        <button 
+          mat-flat-button
+          [disabled]="!loginForm.valid"
+        >
           Login
         </button>
         <a routerLink="/register" mat-button>
