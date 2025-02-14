@@ -20,7 +20,7 @@ import { MatCardModule } from "@angular/material/card";
     <section class="recipe-details-content">
       @defer {
         <header>
-          <a mat-button routerLink="/">
+          <a mat-button routerLink="/home">
             <span>Return to recipe list</span>
             <mat-icon 
               aria-hidden="false" 

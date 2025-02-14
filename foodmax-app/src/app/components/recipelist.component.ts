@@ -63,7 +63,7 @@ import { MatInputModule } from "@angular/material/input"
                 />                  
               </mat-card-content>
               <mat-card-actions>
-                <a mat-button [routerLink]="['recipe-details', recipe.id]">
+                <a mat-button [routerLink]="['/recipe-details', recipe.id]">
                   <span>See more...</span>
                   <mat-icon 
                     aria-hidden="false" 
